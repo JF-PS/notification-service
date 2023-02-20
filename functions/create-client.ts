@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { nhost } from "./nhost";
+import { nhost } from "./_nhost-client";
 
 import gql from "graphql-tag";
 
@@ -40,5 +40,8 @@ export default async (req: Request, res: Response) => {
   const { data, error } = await nhost.graphql.request(INSERT_USER_TRANSACTION, {
     params: { ...req.body },
   });
+
+  console.log({ data, error });
+
   res.status(200).json({ data, error });
 };

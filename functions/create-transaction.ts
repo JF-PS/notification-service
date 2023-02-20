@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { novu } from "./novu";
+import { novu } from "./_novu";
 
 export default async (req: Request, res: Response) => {
   const { payload, subscriber, triggerId } = req.body;

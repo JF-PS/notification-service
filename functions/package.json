@@ -1,0 +1,25 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nhost/nhost-js": "^1.13.4",
+    "@novu/node": "^0.11.0",
+    "acorn": "8.8.2",
+    "bufferutil": "4.0.7",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "graphql-tag": "^2.12.6",
+    "utf-8-validate": "5.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.0"
+  }
+}
